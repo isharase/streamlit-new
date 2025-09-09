@@ -10,7 +10,7 @@ model = joblib.load("campaign_predictor.pkl")
 
 st.set_page_config(page_title="Campaign Predictor", layout="wide")
 
-st.title("📊 Campaign Performance Predictor")
+st.title("📊 Campaign Performance")
 st.markdown("Predict impressions, clicks, likes, shares, and purchases for a campaign based on its settings.")
 
 # ----------------------------
