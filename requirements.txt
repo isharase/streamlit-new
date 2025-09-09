@@ -1,4 +1,4 @@
-scikit-learn
-joblib
-pandas
 streamlit
+pandas
+scikit-learn
+cloudpickle
