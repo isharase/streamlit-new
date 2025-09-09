@@ -50,5 +50,8 @@ if st.button("Predict Performance"):
     st.dataframe(results_df)
 
     # Bar chart
+    # st.subheader("Visual Representation")
+    # st.bar_chart(results_df.T)
+
     st.subheader("Visual Representation")
-    st.bar_chart(results_df.T)
+    st.bar_chart(results_df.T.sort_values(by=0, ascending=False))

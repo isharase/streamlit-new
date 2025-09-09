@@ -46,16 +46,9 @@ if st.button("Predict Performance"):
     results_df = pd.DataFrame(prediction, columns=["Impressions", "Clicks", "Comments", "Likes", "Shares", "Purchases"])
 
     # Display results
-    # st.subheader("Predicted Campaign Performance")
-    # st.dataframe(results_df)
+    st.subheader("Predicted Campaign Performance")
+    st.dataframe(results_df)
 
+    # Bar chart
     st.subheader("Visual Representation")
-    st.bar_chart(results_df.T.sort_values(by=0, ascending=False))
-
-    # # Bar chart
-    # st.subheader("Visual Representation")
-    # st.bar_chart(results_df.T)
-
-    st.subheader("Visual Representation (Normalized %)")
-    normalized = (results_df.T / results_df.T.sum()) * 100
-    st.bar_chart(normalized)
+    st.bar_chart(results_df.T)
