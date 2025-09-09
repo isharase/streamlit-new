@@ -49,6 +49,8 @@ if st.button("🚀 Predict Performance"):
     # Convert to DataFrame
     results_df = pd.DataFrame(prediction, columns=["Impressions", "Clicks", "Comments", "Likes", "Shares", "Purchases"])
 
+    results_df = results_df.round().astype(int)
+
     # ----------------------------
     # Show as Metric Cards
     # ----------------------------
