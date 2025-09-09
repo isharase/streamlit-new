@@ -55,3 +55,7 @@ if st.button("Predict Performance"):
 
     st.subheader("Visual Representation")
     st.bar_chart(results_df.T.sort_values(by=0, ascending=False))
+
+    st.subheader("Visual Representation (Normalized %)")
+    normalized = (results_df.T / results_df.T.sum()) * 100
+    st.bar_chart(normalized)
